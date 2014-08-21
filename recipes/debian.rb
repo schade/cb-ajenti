@@ -6,7 +6,7 @@
 
 include_recipe "apt"
 
-case case node[:platform_version]
+case node[:platform_version]
 when < 7.0
 	apt_repository "backports" do
 		uri "http://mirror.yandex.ru/debian-backports"
